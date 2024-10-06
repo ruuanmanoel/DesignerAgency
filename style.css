@@ -87,3 +87,35 @@ nav{
 .nav_links a:hover{
     color: var(--second-color);
 }
+@media (width > 768px) {
+    nav{
+        position: relative;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .nav_header{
+        padding: 0;
+        background-color: transparent;
+    }
+    .nav_logo span{
+        display: flex;
+    }
+    .nav_menu_btn{
+        display: none;
+    }
+    .nav_links{
+        position:static;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 3rem;
+        background-color: transparent;
+        transform: none;
+    }
+    .nav_links a:hover{
+        color: var(--primary-color);
+    }
+}
